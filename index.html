@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter UI</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black">
+    <div class="wrapper  mx-auto flex bg-black text-white desktop:container">
+
+
+        <div class="left black w-3/5 flex flex-col py-2 justify-between">
+            <div class="logo mx-8">
+                <div class="hover:bg-slate-500 w-fit rounded-full p-2"><img width="35" src="logo.svg" alt=""></div>
+            </div>
+            <div class="buttons">
+                <ul class="font-bold px-10 w-fit text-2xl">
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">Home</span><span id="hide_phone">Home</span></li>
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">explore</span><span id="hide_phone">Explore</span></li>
+
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">notifications</span><span id="hide_phone">Notifications</span></li>
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">message</span><span id="hide_phone">Messages</span></li>
+
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">visibility_off</span><span id="hide_phone">Grok</span></li>
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">list</span><span id="hide_phone">Lists</span></li>
+
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">person</span><span id="hide_phone">Profile</span></li>
+                    <li
+                        class="flex items-center gap-1 w-fit px-2 py-1 rounded-full hover:bg-gray-500 transition-all hover:cursor-pointer">
+                        <span class="material-symbols-outlined  text-3xl desktop:text-lg">more</span><span id="hide_phone">More</span></li>
+
+                </ul>
+            </div>
+            <div id="hide_phone"
+                class="desktop:py-2 desktop:w-2/5 desktop:ml-8 py-3 mx-5 text-center w-[80%] bg-blue rounded-full bg-blue-600 hover:bg-blue-700 transition-all hover:cursor-pointer">
+                Post</div>
+            <div
+                class="photo flex w-fit items-center justify-start rounded-full hover:bg-slate-500 hover:cursor-pointer py-2 mx-6 my-2 px-4 transition-all">
+                <div class="ico_p px-1 ">
+                    <span class="material-symbols-outlined">
+                        <img class="rounded-full w-8" src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">
+                    </span>
+                </div>
+                <div id="hide_phone" class="username flex flex-col">
+                    <div class="desktop:text-[0.7rem]">Mudassar Majeed</div>
+                    <small class="desktop:text-[0.5rem]">
+                        @Cold_blooded3
+                    </small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="center border w-full">
+            <div class="header sticky top-0 px-1 py-2">
+                <div class="search-bar flex justify-between">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </div>
+                    <div class="w-3/5">
+                        <input type="text" placeholder="Search Here" class="w-full bg-[#202327] px-2 py-1 rounded-2xl">
+                    </div>
+                    <div><span class="material-symbols-outlined">
+                            more_horiz
+                        </span></div>
+                </div>
+                <div class="flex justify-around py-2">
+                    <div class="underline underline-offset-4 under hover:cursor-pointer">For You</div>
+                    <div class="underline underline-offset-4 hover:cursor-pointer">Following</div>
+                </div>
+            </div>
+            <div class="content whats">
+                <div class="flex p-5  text-gray-400 gap-2 justify-start items-center text-xl"><img
+                        class="w-14 rounded-full"
+                        src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">What
+                    is Happening?!</div>
+                <div class="flex upload justify-between pr-5">
+                    <div class="uploadss rounded-full flex pl-10 ml-10 gap-1">
+                        <span class="material-symbols-outlined">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined">
+                            event
+                        </span><span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <span class="material-symbols-outlined">
+                            list
+                        </span>
+                    </div>
+                    <div><button class="rounded-full bg-blue-600 hover:bg-blue-700 transition-all px-4 py-1">Post</button></div>
+
+                </div>
+            </div>
+            <div class="posts">
+               
+                    <div class="type1">
+                        <div class="p-5 flex gap-1 items-center font-bold"><img
+                            class="w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">Andrew Tate<span class="material-symbols-outlined font-normal">
+                                check_circle
+                                </span><span class="font-normal text-slate-600">@Coberatate . 23h</span>
+                            </div>
+                            <div class="text-gray-500 px-5">Check out the viral reel of Today:</div>
+                            <div class="w-full p-3 mx-auto text-center video border-b-2"><video controls autoplay class="w-3/5 mx-auto" src="Videos/Follow.mp4"></video></div>
+                    </div>
+
+                    <div class="type1">
+                        <div class="p-5 flex gap-1 items-center font-bold"><img
+                            class="w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">Andrew Tate<span class="material-symbols-outlined font-normal">
+                                check_circle
+                                </span><span class="font-normal text-slate-600">@Coberatate . 23h</span>
+                            </div>
+                            <div class="text-gray-500 px-5">Check out the viral reel of Today:</div>
+                            <div class="w-full p-3 mx-auto text-center video border-b-2"><video controls  class="w-3/5 mx-auto" src="Videos/pexels_videos_1994828 (1080p).mp4"></video></div>
+                    </div>
+                    <div class="type1">
+                        <div class="p-5 flex gap-1 items-center font-bold"><img
+                            class="w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">Andrew Tate<span class="material-symbols-outlined font-normal">
+                                check_circle
+                                </span><span class="font-normal text-slate-600">@Coberatate . 23h</span>
+                            </div>
+                            <div class="text-gray-500 px-5">Pexels 1080p Video:</div>
+                            <div class="w-full p-3 mx-auto text-center video border-b-2"><video controls  class="w-3/5 mx-auto" src="Videos/pexels_videos_2099536 (1080p).mp4"></video></div>
+                    </div>
+                    <div class="type1">
+                        <div class="p-5 flex gap-1 items-center font-bold"><img
+                            class="w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1580804333507121152/k_p1Zz5D_400x400.jpg" alt="">Andrew Tate<span class="material-symbols-outlined font-normal">
+                                check_circle
+                                </span><span class="font-normal text-slate-600">@Coberatate . 23h</span>
+                            </div>
+                            <div class="text-gray-500 px-5">Pexels 2160p Video</div>
+                            <div class="w-full p-3 mx-auto text-center video border-b-2"><video controls  class="w-3/5 mx-auto" src="Videos/production_id_5198956 (2160p).mp4"></video></div>
+                    </div>
+                    
+                   
+            </div>
+
+        </div>
+
+
+
+        <div class="right overflow-auto bg-black w-4/5 ">
+            <div
+                class="flex justify-start items-center search bg-[#202327] w-4/5 mx-auto py-1 hover:cursor-pointer px-5 mt-2 rounded-full">
+                <span class="material-symbols-outlined">
+                    search
+                </span>&nbsp;&nbsp; <input class="bg-transparent text-white border-none w-full py-2" type="text"></div>
+
+            <div class="subscribe bg-[#202327] w-4/5 mx-auto py-1 my-3 rounded-2xl p-5 flex flex-col">
+                <h1 class="my-3 text-2xl desktop:text-xl">Subscribe to Premium</h1>
+                <p class="desktop:text-[0.7rem] text-[0.7rem]">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <div class="text-left my-5 mx-2">
+                    <button
+                        class="bg-blue-500 w-2/5 hover:bg-blue-600 transition-all rounded-full desktop:w-3/5 text-[0.8rem] text-white px-4 py-2">Subscribe</button>
+                </div>
+            </div>
+            <div class="trends w-4/5 mx-auto my-5 bg-[#202327] py-1 rounded-2xl px-5  ">
+                <h1 class="text-lg my-2 font-bold">Trends for you</h1>
+                <div class="compon my-2 py-1 rounded-2xl ">
+                    <small>Trending in Pakistan</small>
+                    <p class="font-bold text-sm">#Islamabad</p>
+                    <small>13.7K Posts</small>
+                </div>
+                <div class="compon my-2 py-1 rounded-2xl ">
+                    <small>Entertainment Trending</small>
+                    <p class="font-bold text-sm">#Tubelight Drama</p>
+                    <small>33.7K Posts</small>
+                </div>
+                <div class="compon my-2 py-1 rounded-2xl ">
+                    <small>Trending in the World</small>
+                    <p class="font-bold text-sm">#Free-Palestine</p>
+                    <small>13.7 Million Posts </small>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
